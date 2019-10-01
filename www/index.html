@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.googleapis.com https://fonts.gstatic.com 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+      <!-- As a heading -->
+      <nav class="navbar fixed-top navbar-light bg-light">
+         <h2 class="navbar-brand mb-0">App Name</h2>
+      </nav>
+      <!-- Begin page content -->
+      <div class="container-fluid">
+
+         <!-- Home page -->
+         <div id="page-pending" class="active">
+           <h1>Pending Calls</h1>
+			  <div class="col-12">
+				<ul class="list-group">
+				</ul>
+			  </div>
+	  
+         </div>
+
+         <!-- Feed page -->
+         <div id="page-wip" class="inactive">
+           <h1>WIP Calls</h1>
+			  <div class="col-12">
+				<ul class="list-group">
+				</ul>
+			  </div>
+         </div>
+
+         <!-- Create page -->
+         <div id="page-update" class="inactive">
+           <h1>Call History</h1>
+		   <div class="container">
+          
+			  <table class="table table-bordered">
+				<thead>
+				  <tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Email</th>
+				  </tr>
+				</thead>
+				<tbody class="tbody">
+				  <tr>
+					<td>John</td>
+					<td>Doe</td>
+					<td>john@example.com</td>
+				  </tr>
+				  <tr>
+					<td>Mary</td>
+					<td>Moe</td>
+					<td>mary@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July</td>
+					<td>Dooley</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July1</td>
+					<td>Dooley1</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July2</td>
+					<td>Dooley2</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July3</td>
+					<td>Dooley3</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July4</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July4</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July4</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July4</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July4</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July4</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July4</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July4</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July4</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July4</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July4</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July4</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July4</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July4</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July8</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July9</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July10</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July11</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July12</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July14</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July15</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July16</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July17</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July18</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July19</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July20</td>
+					<td>Dooley4</td>
+					<td>july@example.com</td>
+				  </tr>
+
+				</tbody>
+			  </table>
+			</div>
+
+            <form>
+               <div class="form-row">
+                  <div class="form-group col-md-6">
+                     <label for="inputEmail4" class="col-form-label">Email</label>
+                     <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  </div>
+                  <div class="form-group col-md-6">
+                     <label for="inputPassword4" class="col-form-label">Password</label>
+                     <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label for="inputAddress" class="col-form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+               </div>
+               <div class="form-group">
+                  <label for="inputAddress2" class="col-form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+               </div>
+               <div class="form-row">
+                  <div class="form-group col-md-6">
+                     <label for="inputCity" class="col-form-label">City</label>
+                     <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-4">
+                     <label for="inputState" class="col-form-label">State</label>
+                     <select id="inputState" class="form-control">Choose</select>
+                  </div>
+                  <div class="form-group col-md-2">
+                     <label for="inputZip" class="col-form-label">Zip</label>
+                     <input type="text" class="form-control" id="inputZip">
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="form-check">
+                     <label class="form-check-label">
+                     <input class="form-check-input" type="checkbox"> Check me out
+                     </label>
+                  </div>
+               </div>
+               <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+         </div>
+
+         <!-- Account page -->
+         <div id="page-acct" class="inactive">
+            <h2>Map</h2>
+			<!--Google map-->
+		<div class="map" id="map_canvas"></div>
+      </div>
+
+      <!-- Bottom Nav Bar -->
+      <footer class="footer">
+         <div id="buttonGroup" class="btn-group selectors" role="group" aria-label="Basic example">
+            <button id="pending" type="button" class="btn btn-secondary button-active">
+               <div class="selector-holder">
+                  <i class="material-icons">phone_missed</i>
+                  <span>Pending</span>
+               </div>
+            </button>
+            <button id="wip" type="button" class="btn btn-secondary button-inactive">
+               <div class="selector-holder">
+                  <i class="material-icons">drive_eta</i>
+                  <span>WIP</span>
+               </div>
+            </button>
+            <button id="update" type="button" class="btn btn-secondary button-inactive">
+               <div class="selector-holder">
+                  <i class="material-icons">phone_in_talk</i>
+                  <span>Update Call</span>
+               </div>
+            </button>
+            <button id="acct" type="button" class="btn btn-secondary button-inactive">
+               <div class="selector-holder">
+                  <i class="material-icons">map</i>
+                  <span>Map</span>
+               </div>
+            </button>
+         </div>
+      </footer>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/promise-7.0.4.min.js"></script>
+    </body>
+</html>

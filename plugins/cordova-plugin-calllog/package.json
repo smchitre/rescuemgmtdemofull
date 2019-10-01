@@ -1,0 +1,65 @@
+{
+  "_from": "cordova-plugin-calllog",
+  "_id": "cordova-plugin-calllog@1.3.2",
+  "_inBundle": false,
+  "_integrity": "sha512-rHKoA4Q4C2D/34ppQZ2CYV2ZtHeFwMqOapQ9wgoDPuDQ3KEqF186bsFfZLNJmnsS35xPUK9aGLEmIHV4MfMv6g==",
+  "_location": "/cordova-plugin-calllog",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-calllog",
+    "name": "cordova-plugin-calllog",
+    "escapedName": "cordova-plugin-calllog",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-calllog/-/cordova-plugin-calllog-1.3.2.tgz",
+  "_shasum": "9531fcd850a18de9da18ffec4433dbb2ed98ed36",
+  "_spec": "cordova-plugin-calllog",
+  "_where": "C:\\Users\\Shai\\Documents\\Projects\\cordova\\rescuemgmtdemofull",
+  "author": {
+    "name": "Creacore"
+  },
+  "bugs": {
+    "url": "https://github.com/creacore-team/cordova-plugin-calllog/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-calllog",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "A plugin to get the device's call log",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    },
+    {
+      "name": "cordova-android",
+      "version": ">=5.0.0"
+    }
+  ],
+  "homepage": "https://github.com/creacore-team/cordova-plugin-calllog#readme",
+  "keywords": [
+    "cordova",
+    "calllog",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-calllog",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creacore-team/cordova-plugin-calllog.git"
+  },
+  "version": "1.3.2"
+}

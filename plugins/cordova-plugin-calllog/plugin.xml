@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="cordova-plugin-calllog"
+  version="1.2.2">
+  <name>CALLLOG</name>
+  <description>A plugin to get the device's call log</description>
+  <license>MIT</license>
+  <keywords>cordova,calllog</keywords>
+  <repo>https://github.com/creacore-team/cordova-plugin-calllog</repo>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+    <engine name="cordova-android" version=">=5.0.0"/>
+  </engines>
+
+  <js-module src="www/calllog.js" name="CallLog">
+    <merges target="window.plugins.callLog" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="CallLog">
+        <param name="android-package" value="be.creacore.calllog.CallLog"/>
+      </feature>
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/*">
+      <uses-permission android:name="android.permission.READ_CALL_LOG" />
+      <uses-permission android:name="android.permission.READ_CONTACTS" />
+    </config-file>
+
+    <source-file src="src/android/be/creacore/calllog/CallLog.java" target-dir="src/be/creacore/calllog" />
+    <source-file src="src/android/be/creacore/calllog/Utils.java" target-dir="src/be/creacore/calllog" />
+    <source-file src="src/android/be/creacore/calllog/Filter.java" target-dir="src/be/creacore/calllog" />
+
+    <js-module src="www/android/calllog.js" name="CallLogAndroid">
+      <merges target="window.plugins.callLog" />
+    </js-module>
+  </platform>
+
+</plugin>
